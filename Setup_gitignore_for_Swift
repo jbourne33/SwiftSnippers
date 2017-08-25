@@ -1,0 +1,14 @@
+#Creating a .gitignore for Swift XCode projects
+
+#First, open a Terminal window and enter the following command. You only need to do this step once, not for every project.
+$ git config --global alias.ignore '!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi'
+
+#Now, for any project using Git, do the following in a Terminal window:
+cd <directory where your project is stored>
+git ignore swift,macos >.gitignore
+git add .gitignore
+git commit -m "Add .gitignore file"
+
+#This downloads the most current .gitignore configuration for writing Swift code on macOS.
+
+#Note that you added the .gitignore file to your repository for Git to track since the filtering it provides is also an important part of your project.
